@@ -31,3 +31,8 @@ echo "rue :".$_POST['rue']."<br/>";
 
 <a href="Inscription.html">Revenir sur la page de connexion</a><br>
 
+<form action="Session_1.php" method="post">
+    votre login : <input type="text" name="login">
+    votre mot de passe : <input type="password" name="mdp"><br/>
+    <input type="submit" value="Connexion">
+</form>
