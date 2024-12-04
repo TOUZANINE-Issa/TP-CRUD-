@@ -1,4 +1,4 @@
-<h1>Formulaire inscription</h1><br>
+<h1>Formulaire connexion</h1><br>
 <h3>Vérifier vos informations</h3>
 
 
@@ -29,5 +29,5 @@ echo "codePostal :".$_POST['codePostal']."<br/>";
 echo "rue :".$_POST['rue']."<br/>";
 ?>
 
-<a href="tableau.html">Revenir sur la page de connexion</a><br>
+<a href="Inscription.html">Revenir sur la page de connexion</a><br>
 
