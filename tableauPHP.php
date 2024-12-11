@@ -3,7 +3,7 @@
 
 
 <?php
-$bdd = new PDO('mysql:host=localhost;dbname=ite_bibliotheque;charset=utf8','root','');
+$bdd = new PDO('mysql:host=localhost;dbname=ie_bibliotheque;charset=utf8','root','');
 $prenom = $bdd ->prepare('INSERT INTO inscrit(nom, prenom, email,tel_fixe ,tel_portable , ville, cp, rue) VALUES (:nom, :prenom, :email, :tel_fixe, :tel_portable, :ville, :codePostal, :rue)');
 
 
