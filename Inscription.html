@@ -56,7 +56,8 @@
         }
 
         input[type="submit"]:hover,
-        input[type="reset"]:hover {
+        input[type="reset"]:hover
+        {
             background-color: #0056b3;
         }
     </style>
@@ -67,27 +68,34 @@
     <h1>Formulaire inscription</h1>
 
     <ul>
-        <p>Entrer votre prenom</p>
+        <p>Prenom</p>
         <input type="text" name="prenom" />
-        <p>Entrer votre nom</p>
+        <p>Nom</p>
         <input type="text" name="nom" />
-        <p>Entrer votre email</p>
+        <p>Email</p>
         <input type="email" name="email" />
-        <p>Entrer votre numero de telephone Fix</p>
+        <p>Numero de telephone Fix</p>
         <input type="number" name="tel_fix" />
-        <p>Entrer votre numero de telephone Portable</p>
+        <p>Numero de telephone Portable</p>
         <input type="number" name="tel_portable" />
-        <p>Entrer votre ville</p>
+        <p>Ville</p>
         <input type="text" name="ville" />
-        <p>Entrer votre Code Postal</p>
+        <p>Code Postal</p>
         <input type="number" name="codePostal" />
-        <p>Entrer votre rue</p>
+        <p>Rue/Avenue/Boulevard</p>
         <input type="text" name="rue" />
     </ul>
-
+<p>si vous avais deja un compte valide sans rien marqué</p>
     <input type="submit" value="valider" />
     <input type="reset" value="rest" />
-</form>
+    <h1>Supprimer un compte</h1>
 
+        <label for="id_inscrit">ID de l'utilisateur à supprimer :</label>
+        <input type="number" name="id_inscrit" id="id_inscrit" required>
+        <button type="submit">Supprimer</button>
+
+</form>
 </body>
+
+
 </html>
