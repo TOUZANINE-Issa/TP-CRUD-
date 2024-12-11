@@ -56,7 +56,8 @@
         }
 
         input[type="submit"]:hover,
-        input[type="reset"]:hover {
+        input[type="reset"]:hover
+        {
             background-color: #0056b3;
         }
     </style>
@@ -87,7 +88,14 @@
 <p>si vous avais deja un compte valide sans rien marqué</p>
     <input type="submit" value="valider" />
     <input type="reset" value="rest" />
-</form>
+    <h1>Supprimer un compte</h1>
 
+        <label for="id_inscrit">ID de l'utilisateur à supprimer :</label>
+        <input type="number" name="id_inscrit" id="id_inscrit" required>
+        <button type="submit">Supprimer</button>
+
+</form>
 </body>
+
+
 </html>
