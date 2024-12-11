@@ -7,7 +7,7 @@ if (isset($_POST['login']) && isset($_POST['mdp'])) {
         'prenom' => $_POST['login'],
         'nom' => $_POST['mdp'],
     ));
-    
+
 
     if (empty($res)) {
         echo "Erreur de connexion. Veuillez vérifier vos identifiants.";
