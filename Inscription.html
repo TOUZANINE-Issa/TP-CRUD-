@@ -2,45 +2,99 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
     <title>Inscription</title>
+    <style>
+        body {
+            background-image: url('https://i.goopics.net/lt5bx8.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 50px auto; /* Centrer le formulaire horizontalement */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center; /* Centrer le contenu du formulaire */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"] {
+            display: block;
+            margin: 10px auto; /* Centre les champs */
+            width: 80%; /* Largeur des champs */
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
 
-<form action="tableauPHP.php    " method="post">
+<form action="tableauPHP.php" method="post">
     <h1>Formulaire inscription</h1>
 
     <ul>
-    <p><p>Entrer votre prenom</p>
+        <p>Entrer votre prenom</p>
         <input type="text" name="prenom" />
-    <p>Entrer votre nom</p>
-        <input type="text" name="nom" /><br>
-    <p>Entrer votre email</p>
-        <input type="email" name="email" /><br>
-    <p>Entrer votre numero de telephone Fix</p>
-        <input type="number" name="tel_fix" /><br>
-    <p>Entrer votre numero de telephone Portable</p>
-        <input type="number" name="tel_portable" /><br>
-    <p>Entrer votre ville</p>
-        <input type="text" name="ville" /><br>
-    <p>Entrer votre Code Postal</p>
-        <input type="number" name="codePostal" /><br>
-    <p>Entrer votre rue</p>
-        <input type="text" name="rue" /><br>
-        <ul/>
-        <ul><br>
-        <input type="submit" value="valider"/>
-        <input type="reset" value="rest" />
+        <p>Entrer votre nom</p>
+        <input type="text" name="nom" />
+        <p>Entrer votre email</p>
+        <input type="email" name="email" />
+        <p>Entrer votre numero de telephone Fix</p>
+        <input type="number" name="tel_fix" />
+        <p>Entrer votre numero de telephone Portable</p>
+        <input type="number" name="tel_portable" />
+        <p>Entrer votre ville</p>
+        <input type="text" name="ville" />
+        <p>Entrer votre Code Postal</p>
+        <input type="number" name="codePostal" />
+        <p>Entrer votre rue</p>
+        <input type="text" name="rue" />
     </ul>
-        <ul>
-        <p>Entrer votre indentifiant</p>
-        <input type="text" name="indentifiant"/>
-        <input type="submit" value="valider"/>
 
+    <ul>
+        <p>Entrer votre identifiant</p>
+        <input type="text" name="identifiant" />
         <p>Entrer votre mot de passe</p>
-        <input type="password" name="password"/>
-        <input type="submit" value="valider"/>
-            </ul>
+        <input type="password" name="password" />
+    </ul>
+
+    <input type="submit" value="valider" />
+    <input type="reset" value="rest" />
 </form>
+
 </body>
 </html>
