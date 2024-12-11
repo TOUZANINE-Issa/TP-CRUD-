@@ -30,7 +30,7 @@ echo "rue :".$_POST['rue']."<br/>";
 ?>
 
 <a href="Inscription.html">Revenir sur la page de connexion</a><br>
-
+<p>le prenom est le login et le mot de passe c est le nom</p>
 <form action="Session_1.php" method="post">
     votre login : <input type="text" name="login">
     votre mot de passe : <input type="password" name="mdp"><br/>
